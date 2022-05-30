@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+<title>Entertainment</title>
+</head>
+<body>
+    <main class="background">
+        <section class="stopwatch">
+            <section class="title">
+                <h1>StopWatch</h1>
+            </section>
+            <div class="wrapper">
+                <div class="time displayeee">
+                  <span class="hour">00</span>
+                  <span class="colon">:</span>
+                  <span class="minute">00</span>
+                  <span class="colon">:</span>
+                  <span class="second">00</span>
+                  <span class="colon ms-colon">:</span>
+                  <span class="millisecond">00</span>
+                </div>
+                <div class="buttons controlz">
+                  <button class="start butt">Start</button>
+                  <button class="stop butt">Stop</button>
+                  <button class="reset butt">Reset</button>
+                </div>
+            </div>
+        </section>
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+        <section class="title">
+            <h1>Rock Paper Scissors</h1>
+        </section>
+        <div class="selections">
+            <button class="selection" data-selection="rock">✊</button>
+            <button class="selection" data-selection="paper">✋</button>
+            <button class="selection" data-selection="scissors">✌</button>
+          </div>
+          <div class="results">
+            <div class="result-score">
+              You
+              <span class="result-score" data-your-score>0</span>
+            </div>
+            <div data-final-column class="result-score">
+              Computer
+              <span class="result-score" data-computer-score>0</span>
+            </div>
+            <!-- <div class="result-selection winner">✊</div>
+            <div class="result-selection">✌</div> -->
+          </div>
+          
+        <section class="hehe">
+            <section class="title">
+                <h1>Music Player</h1>
+            </section>
+          <div class="music-container" id="music-container">
+            <div class="music-info">
+              <h4 id="title"></h4>
+              <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+              </div>
+            </div>
+      
+            <audio src="./music/music-player_music_ukulele.mp3" id="audio"></audio>
+      
+            <div class="img-container">
+              <img src="./image/ukulele.jpg" alt="music-cover" id="cover"></img>
+            </div>
+            <div class="navigation">
+              <button id="prev" class="action-btn">
+                <i class="fas fa-backward">⏪</i>
+              </button>
+              <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play">⏯</i>
+              </button>
+              <button id="next" class="action-btn">
+                <i class="fas fa-forward">⏩</i>
+              </button>
+            </div>
+          </div>
+        </section>
+      
+    </main>
+<script src="./index.js"></script>
+</body>
+</html>
